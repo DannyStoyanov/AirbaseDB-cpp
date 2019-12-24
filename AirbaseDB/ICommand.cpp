@@ -9,4 +9,8 @@ const std::string& ICommand::getName() const {
 	return this->name;
 }
 
+const std::vector<std::string> ICommand::getArguments() const {
+	return arguments;
+}
+
 ICommand::~ICommand(){}

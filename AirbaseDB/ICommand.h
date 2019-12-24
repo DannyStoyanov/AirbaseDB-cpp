@@ -11,6 +11,7 @@ public:
 	void setArguments(const std::vector<std::string>&);
 	virtual void execute() = 0;
 	const std::string& getName() const;
+	const std::vector<std::string> getArguments() const;
 	virtual ~ICommand();
 };
 

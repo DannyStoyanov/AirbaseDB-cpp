@@ -29,3 +29,24 @@ void Dispatcher::opitmizeAttribute() {
 void Dispatcher::exitProgram() {
 	exit_command.execute();
 }
+createCommand& Dispatcher::getCreateCommand() {
+	return create_command;
+}
+deleteCommand& Dispatcher::getDeleteCommand() {
+	return delete_command;
+}
+updateCommand& Dispatcher::getUpdateCommand() {
+	return update_command;
+}
+showCommand& Dispatcher::getShowCommand() {
+	return show_command;
+}
+optimizeCommand& Dispatcher::getOptimizeCommand() {
+	return optimize_command;
+}
+searchCommand& Dispatcher::getSearchCommand() {
+	return search_command;
+}
+exitCommand& Dispatcher::getExitCommand() {
+	return exit_command;
+}

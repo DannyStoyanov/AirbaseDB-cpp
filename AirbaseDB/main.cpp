@@ -8,8 +8,9 @@
 #include "searchCommand.h"
 #include "exitCommand.h"
 #include "Dispatcher.h"
-
+#include "AirbaseSystem.h"
 int main() {
-
+	AirbaseSystem airbase;
+	airbase.run();
 	return 0;
 }

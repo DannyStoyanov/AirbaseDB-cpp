@@ -33,9 +33,6 @@
     <ClCompile Include="exitCommand.cpp">
       <Filter>Source Files\Commands</Filter>
     </ClCompile>
-    <ClCompile Include="ICommand.cpp">
-      <Filter>Source Files\Commands</Filter>
-    </ClCompile>
     <ClCompile Include="optimizeCommand.cpp">
       <Filter>Source Files\Commands</Filter>
     </ClCompile>
@@ -49,6 +46,12 @@
       <Filter>Source Files\Commands</Filter>
     </ClCompile>
     <ClCompile Include="Dispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ICommand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AirbaseSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,9 +68,6 @@
     <ClInclude Include="exitCommand.h">
       <Filter>Header Files\Commands Headers</Filter>
     </ClInclude>
-    <ClInclude Include="ICommand.h">
-      <Filter>Header Files\Commands Headers</Filter>
-    </ClInclude>
     <ClInclude Include="optimizeCommand.h">
       <Filter>Header Files\Commands Headers</Filter>
     </ClInclude>
@@ -78,6 +78,12 @@
       <Filter>Header Files\Commands Headers</Filter>
     </ClInclude>
     <ClInclude Include="Dispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AirbaseSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommand.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

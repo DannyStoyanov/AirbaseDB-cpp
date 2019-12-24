@@ -25,5 +25,12 @@ public:
 	void showAttribute();
 	void opitmizeAttribute();
 	void exitProgram();
+	createCommand& getCreateCommand();
+	deleteCommand& getDeleteCommand();
+	updateCommand& getUpdateCommand();
+	showCommand& getShowCommand();
+	optimizeCommand& getOptimizeCommand();
+	searchCommand& getSearchCommand();
+	exitCommand& getExitCommand();
 };
 
