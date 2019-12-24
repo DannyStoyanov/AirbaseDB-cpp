@@ -139,12 +139,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="createCommand.cpp" />
+    <ClCompile Include="deleteCommand.cpp" />
+    <ClCompile Include="Dispatcher.cpp" />
+    <ClCompile Include="exitCommand.cpp" />
     <ClCompile Include="ICommand.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="optimizeCommand.cpp" />
+    <ClCompile Include="searchCommand.cpp" />
+    <ClCompile Include="showCommand.cpp" />
+    <ClCompile Include="updateCommand.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="createCommand.h" />
+    <ClInclude Include="deleteCommand.h" />
+    <ClInclude Include="Dispatcher.h" />
+    <ClInclude Include="exitCommand.h" />
     <ClInclude Include="ICommand.h" />
+    <ClInclude Include="optimizeCommand.h" />
+    <ClInclude Include="searchCommand.h" />
+    <ClInclude Include="showCommand.h" />
+    <ClInclude Include="updateCommand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

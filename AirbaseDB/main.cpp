@@ -7,6 +7,7 @@
 #include "optimizeCommand.h"
 #include "searchCommand.h"
 #include "exitCommand.h"
+#include "Dispatcher.h"
 
 int main() {
 

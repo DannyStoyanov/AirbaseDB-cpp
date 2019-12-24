@@ -13,23 +13,71 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Commands">
+      <UniqueIdentifier>{d0c43817-3ad3-4e1a-8fb9-fabda650a5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Commands Headers">
+      <UniqueIdentifier>{ad1937ea-20cb-4fd7-bf6a-11fd76a6bdc2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ICommand.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="createCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="exitCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="ICommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="optimizeCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="searchCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="showCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="updateCommand.cpp">
+      <Filter>Source Files\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Dispatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ICommand.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="updateCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
     </ClInclude>
     <ClInclude Include="createCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="deleteCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="exitCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="optimizeCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="searchCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="showCommand.h">
+      <Filter>Header Files\Commands Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Dispatcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
