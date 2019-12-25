@@ -44,6 +44,9 @@ void AirbaseSystem::findAndExecuteCommand(const std::string& commandName, const 
 		dispatcher.getExitCommand().setArguments(arguments);
 		dispatcher.getExitCommand().execute();
 	}
+	else {
+		std::cout << "Invalid command!" << std::endl;
+	}
 }
 void AirbaseSystem::run() {
 	std::string line;
