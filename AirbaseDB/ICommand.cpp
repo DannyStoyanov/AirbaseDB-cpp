@@ -1,4 +1,5 @@
 #include "ICommand.h"
+
 ICommand::ICommand(const std::string& _name) : name(_name) {}
 
 void ICommand::setArguments(const std::vector<std::string>& arguments) {

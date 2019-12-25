@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AirbaseSystem.cpp" />
+    <ClCompile Include="Attribute.cpp" />
     <ClCompile Include="createCommand.cpp" />
     <ClCompile Include="deleteCommand.cpp" />
     <ClCompile Include="Dispatcher.cpp" />
@@ -152,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AirbaseSystem.h" />
+    <ClInclude Include="Attribute.h" />
     <ClInclude Include="createCommand.h" />
     <ClInclude Include="deleteCommand.h" />
     <ClInclude Include="Dispatcher.h" />
