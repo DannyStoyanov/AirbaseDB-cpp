@@ -58,7 +58,7 @@ void createCommand::execute() {
 	Attribute record(currentId, currentArguments[1], currentArguments[2], currentFlights);
 	std::fstream writeFile;
 	writeFile.open(filename, std::ios::app); // CHANGE IT TO STD::IOS APP, OUT IS JUST FOR TESTING!
-	writeFile << currentId << " " << currentArguments[1] << " " << currentArguments[2] << " " << currentFlights << '\n';
+	writeFile << currentId << " " << currentArguments[1] << " " << currentArguments[2] << " " << currentFlights << " " << '\n';
 	writeFile.close();
 	std::cout << "Record created: [ID:" << currentId << "\t Plane:" << currentArguments[1] << "\t Type:" << currentArguments[2] << "\t Flights:" << currentFlights << "]" << std::endl;
 }
