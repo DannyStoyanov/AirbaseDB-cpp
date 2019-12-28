@@ -1,10 +1,11 @@
 #include "searchCommand.h"
+#include "GlobalConnection.h"
 #include<fstream>
 #include<cassert>
 #include<string>
 #include<sstream>
 #include<iomanip>
-const std::string filename = "Planes.db";
+static GlobalConnection data;
 
 searchCommand::searchCommand() : ICommand(std::string("search")) {}
 
@@ -17,7 +18,7 @@ void searchCommand::execute() {
 	buffer >> myId;
 	buffer.clear();
 	std::fstream readFile;
-	readFile.open(filename, std::ios::in);
+	readFile.open(data.filename, std::ios::in);
 	char line[554];
 	for (unsigned long long i = 0; !readFile.eof(); i++)
 	{

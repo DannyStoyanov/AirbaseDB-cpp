@@ -144,6 +144,7 @@
     <ClCompile Include="deleteCommand.cpp" />
     <ClCompile Include="Dispatcher.cpp" />
     <ClCompile Include="exitCommand.cpp" />
+    <ClCompile Include="GlobalConnection.cpp" />
     <ClCompile Include="ICommand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="optimizeCommand.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="deleteCommand.h" />
     <ClInclude Include="Dispatcher.h" />
     <ClInclude Include="exitCommand.h" />
+    <ClInclude Include="GlobalConnection.h" />
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="optimizeCommand.h" />
     <ClInclude Include="searchCommand.h" />

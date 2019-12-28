@@ -1,17 +1,19 @@
 #include "deleteCommand.h"
+#include "GlobalConnection.h"
 #include<cassert>
 #include<fstream>
 #include<sstream>
 #include<cstring>
 #include <algorithm>
 #include<cstdio>
-const std::string filename = "Planes.db";
+static GlobalConnection data;
+
 deleteCommand::deleteCommand() : ICommand(std::string("delete")) {}
 
 void deleteCommand::execute() {
 	assert(this->getArguments().size() == 1);
 	std::ifstream readFile;
-	readFile.open(filename, std::ios::in);
+	readFile.open(data.filename, std::ios::in);
 	std::ofstream writeFile;
 	writeFile.open("temp.db", std::ios::out);
 
@@ -41,23 +43,13 @@ void deleteCommand::execute() {
 		}
 		buffer.clear();
 	}
-	/* Not working . . .
-	if (remove("Planes.db") == 0)
-		std::cout << "File successfully delete!" << std::endl;
-	else
-		std::cout << "Error deleting file" << std::endl;
-	if (std::rename("temp.db", "Planes.db") == 0)
-		std::cout << "File successfully renamed!" << std::endl;
-	else
-		std::cout << "Error renaming file" << std::endl;
-		*/
 	writeFile.close();
 	readFile.close();
 
 	std::ifstream readFile2;
 	readFile2.open("temp.db", std::ios::in);
 	std::ofstream writeFile2;
-	writeFile2.open(filename, std::ios::out);
+	writeFile2.open(data.filename, std::ios::out);
 	while (getline(readFile2, line, '\n')) {
 		writeFile2 << line << '\n';
 	}
