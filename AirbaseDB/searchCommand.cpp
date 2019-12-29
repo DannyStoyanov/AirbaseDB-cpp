@@ -25,7 +25,6 @@ void searchCommand::execute() {
 		std::string str;
 		readFile.getline(line, 554, '\n');
 		buffer << line;
-		int temp;
 		buffer >> str;
 		if (str == "") {
 			std::cout << "Record with ID:" << myId << " is not existing!" << std::endl;

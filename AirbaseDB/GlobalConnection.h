@@ -6,7 +6,9 @@ class GlobalConnection{
 public:
 	const std::string filename;
 	GlobalConnection();
-	bool isNumber(const std::string& str);
+	bool isNumber(const std::string&);
+	bool isValidNumber(unsigned long long);
+	bool isValidString(const std::string&);
 	bool isValidRecord(Attribute&);
 };
 
