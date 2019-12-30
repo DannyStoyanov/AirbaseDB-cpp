@@ -10,5 +10,6 @@ public:
 	bool isValidNumber(unsigned long long);
 	bool isValidString(const std::string&);
 	bool isValidRecord(Attribute&);
+	void strcpyPtr(char* dest, const char* src);
 };
 

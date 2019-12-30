@@ -32,3 +32,8 @@ bool GlobalConnection::isValidRecord(Attribute& record) {
 	}
 	return true;
 }
+void GlobalConnection::strcpyPtr(char* dest, const char* src)
+{
+	while (*dest++ = *src++)
+		;
+}

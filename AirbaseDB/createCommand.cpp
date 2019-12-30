@@ -3,6 +3,7 @@
 #include<cassert>
 #include<sstream> 
 #include<cmath>
+#include "BinaryData.h"
 #include "createCommand.h"
 #include "Attribute.h"
 #include "GlobalConnection.h"
@@ -12,6 +13,7 @@ createCommand::createCommand() : ICommand(std::string("create")) {}
 
 void createCommand::execute() {
 	assert(this->getArguments().size() == 4); // checking whether create has 4 arguments
+	bool isCreated = false;
 	std::vector<std::string> currentArguments;
 	currentArguments = this->getArguments();
 	std::stringstream buffer;
@@ -26,11 +28,14 @@ void createCommand::execute() {
 		std::cout << "Invalid arguments of \"create\" command!" << std::endl;
 		return; // checking whether all arguments are valid
 	}
-	std::fstream writeFile;
-	writeFile.open(data.filename, std::ios::app); // CHANGE IT TO STD::IOS APP, OUT IS JUST FOR TESTING!
-	writeFile << record.getId() << " " << record.getPlane() << " " << record.getType() << " " << record.getFlights() << " " << '\n';
-	writeFile.close();
-	std::cout << "Record created: [ID:" << currentId << "\t Plane:" << currentArguments[1] << "\t Type:" << currentArguments[2] << "\t Flights:" << currentFlights << "]" << std::endl;
+	std::unique_ptr<BinaryData> bd(new BinaryData);
+	bd->setData(currentId, currentArguments[1], currentArguments[2], currentFlights);
+	bd->writeToBinaryFile(data.filename);
+	isCreated = true;
+	if (isCreated) {
+		std::cout << "Record created: [ID:" << record.id << "\t Plane:" << record.plane << "\t Type:" << record.type << "\t Flights:" << record.flights << "]" << std::endl;
+	}
+	else std::cout << "Error! Record not created!" << std::endl;
 }
 
 createCommand::~createCommand() {}

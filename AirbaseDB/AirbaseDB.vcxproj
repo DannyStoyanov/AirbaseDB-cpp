@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="AirbaseSystem.cpp" />
     <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="BinaryData.cpp" />
     <ClCompile Include="createCommand.cpp" />
     <ClCompile Include="deleteCommand.cpp" />
     <ClCompile Include="Dispatcher.cpp" />
@@ -155,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="AirbaseSystem.h" />
     <ClInclude Include="Attribute.h" />
+    <ClInclude Include="BinaryData.h" />
     <ClInclude Include="createCommand.h" />
     <ClInclude Include="deleteCommand.h" />
     <ClInclude Include="Dispatcher.h" />
