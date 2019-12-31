@@ -2,6 +2,7 @@
 #include "Attribute.h"
 #include<cmath>
 GlobalConnection::GlobalConnection() : filename("Planes.db") {
+
 }
 bool GlobalConnection::isNumber(const std::string& str) {
 	std::string::const_iterator it = str.begin();

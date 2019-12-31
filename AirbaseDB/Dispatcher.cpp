@@ -1,6 +1,6 @@
 #include "Dispatcher.h"
 Dispatcher::Dispatcher() {
-	// TO BE CONTINUED . . .
+
 }
 Dispatcher::Dispatcher(createCommand _create, deleteCommand _delete, updateCommand _update, showCommand _show, optimizeCommand _optimize, searchCommand _search, exitCommand _exit) {
 	this->create_command = _create;
