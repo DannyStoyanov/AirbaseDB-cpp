@@ -38,7 +38,7 @@ optimize - sort records
 
     optimize
 
-search - display whether record with the given id is in the database
+search - display whether record with the given id is in the database, whether the  database is optimized - Binary Search (O(log n) time complexity), otherwise Linear Seach (O(n) time complexity)
 
     search <id>
 
