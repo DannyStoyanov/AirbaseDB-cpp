@@ -1,0 +1,22 @@
+﻿  AirbaseSystem.cpp
+  Attribute.cpp
+  BinaryData.cpp
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\BinaryData.cpp(340,13): warning C4244: 'initializing': conversion from '__int64' to 'size_t', possible loss of data
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\BinaryData.cpp(375,36): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\BinaryData.cpp(376,32): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\BinaryData.cpp(395,13): warning C4244: 'initializing': conversion from '__int64' to 'size_t', possible loss of data
+  createCommand.cpp
+  deleteCommand.cpp
+  Dispatcher.cpp
+  exitCommand.cpp
+  GlobalConnection.cpp
+  ICommand.cpp
+  main.cpp
+  optimizeCommand.cpp
+  searchCommand.cpp
+  showCommand.cpp
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\showCommand.cpp(23,44): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+C:\Users\Danny\source\repos\AirbaseDB\AirbaseDB\showCommand.cpp(23,36): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+  updateCommand.cpp
+  Generating Code...
+  AirbaseDB.vcxproj -> C:\Users\Danny\source\repos\AirbaseDB\Debug\AirbaseDB.exe
