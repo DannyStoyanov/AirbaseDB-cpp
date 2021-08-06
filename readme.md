@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The program is a database management system for airbase, providing the following basic actions: create, delete, edit, view, update and seach aircraft flights records.
+The program is a database management system for airbase, providing the following basic actions: create, delete, edit, show, update and search aircraft records.
 
 ## Architecture
 
