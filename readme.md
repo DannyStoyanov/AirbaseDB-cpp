@@ -28,7 +28,7 @@ delete - delete record with the given id
 
 update - update attribute of plane with the given id
 
-    update <id> <attribute> 
+    update <id> <attribute> <new_value>
 
 show - display list of records from offset to limit
 
