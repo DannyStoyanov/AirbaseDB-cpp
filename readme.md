@@ -13,6 +13,7 @@ The main idea of the project is based on the architecture which is the command p
 ## Requirements
 
 C++ compiler
+Visual Studio IDE
 
 ## Usage
 
